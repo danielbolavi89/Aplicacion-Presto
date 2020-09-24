@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:customControls="http://xamarin.com/schemas/2014/forms/design" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App4.MainPage">
+
+    <Grid>
+        <pv:PancakeView HorizontalOptions="End" VerticalOptions="End" Margin="30" CornerRadius="40" Padding="15">
+            <pv:PancakeView.BackgroundGradientStops>
+                <pv:GradientStop Color="LightBlue" Offset="0"/>
+                <pv:GradientStop Color="SlateBlue" Offset="1"/>
+            </pv:PancakeView.BackgroundGradientStops>
+            <Expander HorizontalOptions="Start" VerticalOptions="End">
+                <Expander.Header>
+                    <Image Source="add.png" WidthRequest="30" HeightRequest="30" Rotation="180"/>
+                </Expander.Header>
+                <StackLayout Spacing="30" Margin="0,20">
+                    <Image Source="edit.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+                    <Image Source="files.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Expander>
+        </pv:PancakeView>
+    </Grid>
+
+</ContentPage>
